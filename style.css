@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #7A86B6;
+}
+
+h2, h3 {
+    color: #231955;
+}
+
+.head_bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #231955;
+    color: white;
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-content h2 {
+    margin-top: 2px;
+    margin-left: 16px;
+    font-size: 28px;
+}
+
+.input-book-button {
+    margin-top: 20px;
+    width: 25%;
+    float: right;
+}
+
+.input-book-button button {
+    background-color: #231955;
+    color: white;
+    border: 0;
+    border-radius: 30px;
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    cursor: pointer;
+}
+
+.input-book-button span {
+    font-weight: bold;
+}
+
+.input-book {
+    float: left;
+    width: 68%;
+}
+
+.input-book .input input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.input-book .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input-book .input_inline  label {
+    color: #231955;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.input-book .input label {
+    color: #231955;
+    font-weight: bold;
+}
+
+#bookCancel {
+    margin-top: 8px;
+    background-color: #B25068;
+}
+
+#bookSubmit {
+    background-color: #377D71;
+}
+
+#bookUpdate {
+    background-color: orange;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+  
+.modal-content {
+    max-width: 1000px;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 16px; 
+    box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+main {
+    min-width: 800px;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.search-book-button {
+    float: left;
+    width: 50%;
+}
+
+.search-book-button button {
+    width: 80%;
+    margin: 16px;
+    padding: 6px;
+    background-color: #377D71;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search_section {
+    margin: 16px 0;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: #fefefe;
+    overflow: auto;
+    box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+.search_section h2 {
+    color: #231955;
+    text-align: center;
+    font-size: 28px;
+}
+
+.search_book {
+    width: 50%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.search_book  form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search_book  form  label {
+    display: flex;
+    align-items: center;
+}
+
+.search_book  form  input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search_book  form  button {
+    background-color: #231955;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf {
+    margin: 20px;
+}
+
+.book_item {
+    overflow: auto;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #7A86B6;
+}
+
+.incomplete_book {
+    float: left;
+    width: 47%;
+}
+
+.complete_book {
+    float: right;
+    width: 47%;
+}
+
+.book_list .content {
+    float: left;
+    width: 65%;
+    overflow: auto;
+}
+
+.book_list .action {
+    float: right;
+    width: 35%;
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 25px;
+}
+
+.book_list button {
+    width: 70%;
+    margin-top: 4px;
+    padding: 6px;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.green {
+    background-color: #377D71;
+}
+
+.red {
+    background-color: #B25068;
+}
+
+.orange {
+    background-color: orange;
+}
