@@ -17,6 +17,7 @@ function loadSearch() {
 function loadElement() {
   localStorage.setItem(BOOK_KEY, JSON.stringify(books));
   [incompleteBookself.innerHTML, completeBookself.innerHTML] = ['', ''];
+  books.
   books.forEach(book => {
       const item = setElement(book);
       if (book.isComplete) completeBookself.appendChild(item);
@@ -148,3 +149,5 @@ window.onload = () => {
 }
 
 
+const helo = 'mesdlfksjdf';
+console.log(helo.substring(0, 20))
